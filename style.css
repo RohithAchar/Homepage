@@ -48,15 +48,21 @@ p{
 .image-container{
     position: relative;
 }
+.image-container img{
+    object-fit: cover;
+}
 .about-container{
     padding: 20px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
 }
 .text-overlay{
-    text-shadow:3px 3px 5px white;
+    text-shadow:3px 3px 5px rgb(0, 0, 0);
     position: absolute;
-    top: 85%;
-    left: 40%;
+    top: 80%;
+    left: 38%;
+}
+.text-overlay h2{
+    color: white;
 }
 .hero .icons-container{
     float: right;
@@ -121,10 +127,46 @@ p{
     .container{
         padding: 0 70px;
         margin-top: 70px;
-        position: relative;
     }
     .contact-me{
         padding-top: 70px;
         padding-bottom: 40px;
+    }
+}
+@media (max-width: 1140px){
+    .container{
+        padding: 0 40px;
+        flex-direction: column;
+    }
+    .about-container{
+        text-align: center;
+    }
+    .contact-me{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .personal-info{
+        align-items: center;
+    }
+    .personal-info p,div{
+        margin-top: 10px;
+    }
+    .contact-me .image-container{
+        display: none;
+    }
+    .card{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 900px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    .contact-me{
+        padding-bottom: 30px;
+    }
+    .cards-container{
+        gap: 10px;
     }
 }
