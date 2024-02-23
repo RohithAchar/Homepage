@@ -1,8 +1,3 @@
-# Homepage
-Certainly! Here's a template for a README file that you can use to describe your HTML and CSS project focused on responsiveness:
-
----
-
 # Responsive Homepage
 
 ## Description
