@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+/* Add your custom styles below */
+*{
+    font-family: Poppins, sans-serif;
+}
+h1{
+    font-size: 52px;
+}
+h2{
+    font-size: 36px;
+    color: rgb(43, 43, 43);
+}
+h3{
+    color: rgb(43, 43, 43);
+}
+p{
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+}
+.container{
+    padding: 0 200px;
+    margin-top: 70px;
+}
+.flex{
+    display: flex;
+}
+
+/* Hero */
+.hero{
+    align-items: center;
+}
+.image-container{
+    position: relative;
+}
+.about-container{
+    padding: 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+}
+.text-overlay{
+    text-shadow:3px 3px 5px white;
+    position: absolute;
+    top: 85%;
+    left: 40%;
+}
+.hero .icons-container{
+    float: right;
+    margin-top: 20px;
+}
+.icons-container i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Works */
+.project-container{
+    text-align: center;
+}
+.cards-container{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.card{
+    max-width: 350px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.card > .project-image{
+    background-color: rgb(255, 235, 219);
+    height: 200px;
+}
+.card-header{
+    justify-content: space-between;
+}
+.card-header, .card-body{
+    padding: 10px;
+}
+.card-body{
+    line-height: 20px;
+}
+.external-links > a{
+    color: black;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+/* footer */
+.contact-me{
+    background-color: rgb(255, 235, 219);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.personal-info{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image-container img{
+    max-width: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1450px){
+    .container{
+        padding: 0 70px;
+        margin-top: 70px;
+        position: relative;
+    }
+    .contact-me{
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+}
